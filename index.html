@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Les petits plats</title>
+
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+
+    <link rel="icon" type="image/png" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="bbbootstrap">
+        <div class="container2">
+          <div class="logo">
+            <img src="Logo.png" alt="logo" />
+          </div>
+          <h1>
+            CHERCHEZ PARMI PLUS DE 1500 RECETTES <br />
+            DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES
+          </h1>
+          <form>
+            <span
+              role="status"
+              aria-live="polite"
+              class="ui-helper-hidden-accessible"
+            ></span>
+            <input
+              type="text"
+              id="Form_Search"
+              value=""
+              placeholder="Rechercher une recette, un ingrédient..."
+              role="searchbox"
+              class="InputBox"
+              autocomplete="off"
+              minlength="3"
+            />
+            <button type="submit" id="Form_Go" class="send_button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="triage">
+        <div class="filters">
+          <div class="ingredients">
+            <div class="container">
+              <div class="row">
+                <form class="col-md-4">
+                  <label></label>
+                  <select
+                    id="select1"
+                    onchange="getOption(this.value,'1')"
+                    class="form-control select2"
+                    style="width: 180px"
+                  >
+                    <option value="" selected>Ingrédients</option>
+                  </select>
+                  <div id="liste1"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="appareils">
+            <div class="container">
+              <div class="row">
+                <form class="col-md-4">
+                  <label></label>
+                  <select
+                    id="select2"
+                    onchange="getOption(this.value,'2')"
+                    class="form-control select2"
+                    style="width: 180px"
+                  >
+                    <option value="">Appareils</option>
+                  </select>
+                  <div id="liste2"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="ustensiles">
+            <div class="container">
+              <div class="row">
+                <form class="col-md-4">
+                  <label></label>
+
+                  <select
+                    id="select3"
+                    onchange="getOption(this.value,'3')"
+                    class="form-control select2"
+                    onchange="alert(this.value)"
+                    style="width: 180px"
+                  >
+                    <option value="">Ustensiles</option>
+                  </select>
+                  <div id="liste3"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="total_recipes">
+          <p class="nbr_recette">1500 recettes</p>
+        </div>
+      </div>
+
+      <section
+        class="recipes_section"
+        aria-labelledby="recipes-list"
+        role="list"
+      ></section>
+    </main>
+    <script>
+      $(document).ready(function () {
+        $("#select1").select2({
+          placeholder: "Ingrédient",
+          allowClear: true,
+        });
+      });
+
+      $(document).ready(function () {
+        $("#select2").select2({
+          placeholder: "Appareils",
+          allowClear: true,
+        });
+      });
+
+      $(document).ready(function () {
+        $("#select3").select2({
+          placeholder: "Ustensiles",
+          allowClear: true,
+        });
+      });
+    </script>
+
+    <script src="js/index.js"></script>
+    <script src="js/template.js"></script>
+  </body>
+</html>

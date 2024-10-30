@@ -1,0 +1,513 @@
+/* General */
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 400px;
+  text-align: center;
+  color: #ffd15b;
+}
+
+h2 {
+  font-family: "Anton", sans-serif;
+}
+
+p,
+h3,
+h4,
+h5 {
+  font-family: "manrope", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.logo img {
+  width: 205px;
+  height: 25px;
+}
+
+.container2 {
+  margin-bottom: 100px;
+}
+
+
+/* bootstrap header */
+
+body .bbbootstrap {
+  background-image: url(../bg.jpeg) !important;
+  background-size: cover;
+  padding: 30px 0 30px 0;
+  width: 100%;
+}
+
+.bbbootstrap {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background-color: #2e9df7;
+  -webkit-box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.25) inset,
+    0 -15px 15px -15px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.25) inset,
+    0 -15px 15px -15px rgba(0, 0, 0, 0.25) inset;
+}
+
+.bbbootstrap form {
+  position: relative;
+  width: 540px;
+  margin: 22px auto 0;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+.bbbootstrap form input[type="text"] {
+  padding: 15px 20px;
+  padding-right: 100px;
+  border-color: transparent;
+  border-radius: 4px;
+}
+input.InputBox {
+  font-family: "manrope", sans-serif;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 3px;
+  margin: 0;
+  width: 250px;
+  background: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+}
+
+.InputBox {
+  display: block;
+  width: 100% !important;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 10px !important;
+}
+
+.bbbootstrap form input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  float: right;
+  padding: 10px 25px;
+}
+
+body .Button,
+body .button {
+  background-color: #1b1b1b;
+  background-image: none;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.Button,
+.Button:hover,
+.Button:focus,
+.Button:active {
+  text-shadow: none;
+  border-color: transparent;
+}
+
+.Button {
+  display: inline-block;
+  padding: 6px 12px;
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: transparent solid 1px;
+  border-radius: 3px;
+  -webkit-transition: -webkit-box-shadow 50ms;
+  transition: -webkit-box-shadow 50ms;
+  -o-transition: box-shadow 50ms;
+  transition: box-shadow 50ms;
+  transition: box-shadow 50ms, -webkit-box-shadow 50ms;
+  -webkit-font-smoothing: inherit;
+  color: #fff;
+  background-color: #2e9df7;
+  background-repeat: repeat-x;
+  background-color: #38a2f7;
+  background-image: -webkit-linear-gradient(#38a2f7, #2498f7);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#38a2f7),
+    to(#2498f7)
+  );
+  background-image: -o-linear-gradient(#38a2f7, #2498f7);
+  background-image: linear-gradient(#38a2f7, #2498f7);
+}
+
+
+
+/* Bouttons Select */
+
+.select2-container .select2-selection--single {
+  width: 180px !important;
+  height: 50px !important;
+  margin-right: 20px !important;
+  border: none !important;
+}
+.select2-container--default .select2-selection--single {
+  border: none !important;
+  width: 180px !important;
+  height: 50px !important;
+  background-color: white !important;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+  padding: 5px 0px 5px 10px !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  text-align: center !important;
+  background-color: white !important;
+}
+
+.select2-selection .select2-selection--single {
+  color: black !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+/* Textes et icone champ */
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: black !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: "manrope", sans-serif !important;
+}
+
+/* placeholder */
+
+.select2-selection__placeholder {
+  color: black !important;
+}
+
+.select2-selection__clear {
+  display: none;
+}
+
+/* Icone de fleche */
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border-color: black transparent transparent transparent !important; 
+}
+
+/* liste déroulante */
+.select2-container--default .select2-dropdown {
+  background-color: white;
+  border: 0px !important;
+  border-radius: 10px !important;
+}
+
+/* element d'option */
+.select2-container--default .select2-results__option {
+  padding: 8px !important;
+  color: black !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: "manrope", sans-serif !important;
+}
+
+/* Option sélectionnée */
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: #ffd15b !important;
+  color: black; 
+}
+
+/* search field */
+
+.select2-search.select2-search--dropdown {
+  padding: 15px !important;
+}
+
+/* fleche  */
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  display: none;
+}
+
+/* Chevron */
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow::after {
+  font-family: "Font Awesome 6 Free"; 
+  content: "\f078"; 
+  font-weight: 900; 
+  font-size: 16px;
+  color: #333;
+  display: inline-block;
+  position: relative;
+  top: 20px; 
+  right: 10px !important;
+}
+
+/* Loupe */
+
+.select2-container--default .select2-search--dropdown {
+  position: relative; 
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  padding-right: 30px; 
+}
+
+.select2-container--default .select2-search--dropdown::after {
+  font-family: "Font Awesome 6 Free"; 
+  content: "\f002"; 
+  font-weight: 900; 
+  position: absolute;
+  right: 30px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  color: #c3c2c2;
+  font-size: 14px;
+  pointer-events: none; 
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+/* Recipe template */
+
+main {
+  width: 100%;
+}
+
+.triage {
+  width: 100%;
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.total_recipes {
+  width: 20%;
+}
+
+.total_recipes p {
+  font-family: "Anton", sans-serif;
+  font-style: normal;
+  font-size: 21px !important;
+  font-weight: 800px !important;
+}
+
+.recipes_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+.recipes_cards {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: white;
+  border-radius: 21px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.recipes_cards h2 {
+  margin: 15px;
+  font-size: 18px;
+}
+
+.recette h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recette p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ingredient h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recette {
+  margin: 15px;
+}
+
+.ingredient {
+  margin: 15px;
+}
+
+.ingredients {
+  padding: 0;
+  margin: 0;
+}
+
+.recipes_cards img {
+  object-fit: cover;
+  width: auto;
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
+  height: 253px;
+}
+
+.time {
+  background-color: #ffd15b;
+  border-radius: 14px;
+  width: 63px;
+  height: 26px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.ingredient_table {
+  column-count: 2;
+}
+
+.ing {
+  margin-bottom: 15px;
+}
+
+.line1 {
+  color: #1b1b1b;
+  font-weight: 500;
+}
+
+.line2 {
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.liste1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.yellow_option {
+  background-color: #ffd15b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "manrope", sans-serif;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 5px 10px 5px 10px;
+  width: 160px;
+  height: 40px;
+}
+
+.yellow_cross {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+/* Conteneur de la barre de recherche */
+form {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Style du bouton avec icône */
+.send_button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  background-color: black !important;
+  border-radius: 10px;
+  height: 45px;
+  width: 45px;
+}
+
+.send_button:focus {
+  outline: none;
+}
